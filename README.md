@@ -50,7 +50,7 @@ $ npm run test:cov
 ### Cсылки
 - Discord-сервер: [Night Devs](https://discord.gg/PHuvYMrvdr)
 - Поддержать: [DonationAlerts](https://www.donationalerts.com/r/electroplayer)
-- Лицензия: [BSD 3-Clause](LICENSE)<br>
+- Лицензия: [BSD 3-Clause](LICENSE)
 - Репозиторий: [GitHub](https://github.com/Elektroplayer/eclisebot)
 - Сайт: **Coming Soon!**
 
