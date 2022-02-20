@@ -1,17 +1,16 @@
 import { Injectable } from '@nestjs/common'
 import { HttpService } from '@nestjs/axios'
 import { TokenResponseDTO } from './dto/TokenResponseDTO'
-import { URLSearchParams } from "url";
+import { URLSearchParams } from 'url'
 
 @Injectable()
 export class AuthService {
   constructor(private httpService: HttpService) {}
 
-  private token(params): Promise<TokenResponseDTO> {
-    return new Promise((res, rej) => {
-      const responseObserver = this.httpService.post('https://discord.com/api/v9/oauth2/token', params,{
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        responseType: 'json'
+  private token(params: URLSearchParams): Promise<TokenResponseDTO> {
+    return new Promise(res => {
+      const responseObserver = this.httpService.post(`https://discord.com/api/v9/oauth2/token`, params, {
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
       })
       const subscriber = responseObserver.subscribe({
         next(val) {
@@ -46,7 +45,7 @@ export class AuthService {
     params.append('grant_type', 'authorization_code')
     params.append('redirect_uri', process.env.REDIRECT_URL)
     params.append('code', code)
-
+    
     return this.token(params)
   }
 

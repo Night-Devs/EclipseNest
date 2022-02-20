@@ -44,6 +44,7 @@ $ npm run test:cov
 ### Участники проекта (теги Discord и профили Github)
 [[ElectroPlayer]#0256](https://github.com/Elektroplayer) - Разработчик бота, владелец проекта<br>
 [Lokilife#3331](https://github.com/Lokilife) - Разработчик бота, разработчик сайта, со-владелец проекта<br>
+[Kusay#7444](https://github.com/Kasefuchs) - Разработчик сайта<br>
 [Lookins#4727](https://github.com/Lookins01) - Тестеровщик, баг хантер<br>
 
 ### Cсылки
